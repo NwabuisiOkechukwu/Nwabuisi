@@ -1,0 +1,7 @@
+@media screen and (max-width: 480px) {
+	@keyframes excel {
+		100% {
+			width: 60%; /* Further adjusted width for mobile screens */
+		}
+	}
+}

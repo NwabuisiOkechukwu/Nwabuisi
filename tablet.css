@@ -1,0 +1,9 @@
+
+/* Bar animation adjustments for smaller screens */
+@media screen and (max-width: 800px) {
+	@keyframes excel {
+		100% {
+			width: 70%; /* Adjusted width for tablet-sized screens */
+		}
+	}
+}
