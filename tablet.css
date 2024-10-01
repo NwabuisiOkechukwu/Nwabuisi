@@ -7,3 +7,143 @@
 		}
 	}
 }
+
+@media screen and (max-width: 800px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+	.nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+  /* Hide nav-links by default */
+  .nav-links {
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 60px; /* Adjust based on navbar height */
+	left: 0;
+}
+
+.nav-links {
+	transition: max-height 0.3s ease-in-out;
+	overflow: hidden;
+	}
+
+/* Show nav-links when active */
+.nav-links.active {
+	display: flex;
+}
+
+.nav-links li {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.nav-links a {
+	padding: 15px;
+	font-size: 1.2rem;
+}
+}
+
+
+
+
+    /* About Section Adjustments */
+    #about {
+        padding: 20px;
+    }
+
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        width: 100%;
+        max-width: 300px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 4px 4px #414804;
+    }
+
+    #intro {
+        padding: 10px;
+    }
+
+    /* Portfolio Section Adjustments */
+    #portfolio {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .port {
+        width: 90%;
+        max-width: 300px; /* Adjust as needed */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px; /* Adjust as needed */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Services Section Adjustments (Optional) */
+    #services .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 300px; /* Adjust as needed */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Skills Section Adjustments (Optional) */
+    #skills .container, .skillsinfo {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bars {
+        width: 100%;
+        max-width: 300px; /* Adjust as needed */
+    }
+
+    /* Contact Section Adjustments */
+    .contacts form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Social Media Icons */
+    .socials a img {
+        width: 50px; /* Reduce size for mobile */
+    }
